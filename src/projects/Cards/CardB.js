@@ -25,7 +25,7 @@ export function CardB() {
         alt="house picture"
       />
       <i
-        class="fa-regular fa-heart"
+        className="fa-regular fa-heart"
         style={{
           color: "white",
           fontSize: "1.5em",
@@ -43,7 +43,7 @@ export function CardB() {
       </Area>
       <Area style={{ display: "flex", justifyContent: "space-around" }}>
         {house.rooms.map((ele) => (
-          <RoomDiv room={ele} />
+          <RoomDiv room={ele} key={ele.type} />
         ))}
       </Area>
       <Area style={{ backgroundColor: "#f5f9fc", letterSpacing: "1px" }}>
